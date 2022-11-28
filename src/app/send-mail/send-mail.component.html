@@ -1,0 +1,22 @@
+
+<h1>Send Mail</h1>
+
+<a href="mailto:shaileshb.0720@gmail.com?Subject=Hello&body=links:  %0D 
+http://link1.com  %0D http://link1.com " target="_top">Send Mail 1</a>
+
+<br>
+
+<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=someone@example.com&su=SUBJECT&body=BODY&bcc=someone.else@example.com&tf=1"
+target="_top">Send Mail 2</a>
+
+<br>
+
+
+<a [href]="mailto('shaileshb.0720@gmail.com', 'newSubject')">Send mail 3</a>
+
+
+<p>Select multiple elements using custom templates with checkboxes</p>
+
+<ng-select [(ngModel)]="selectedCar">
+  <ng-option *ngFor="let car of cars" [value]="car.id">{{car.name}}</ng-option>
+</ng-select>
